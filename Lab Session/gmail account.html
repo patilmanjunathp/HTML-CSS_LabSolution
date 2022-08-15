@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Account</title>
+    <style>
+    .login{
+        color: black;
+        width: 320px;
+        position:absolute;
+        font-size: larger;
+        font-weight: bolder;
+        top: 20%;
+        line-height: 0px;
+        border-radius:5px;
+        background: transparent;
+        text-align:center;
+        vertical-align: middle;
+        left:35%;
+    }
+    .login h2{
+        text-align: center;
+     }
+    input{
+        height: 40px;
+        width: 70%;
+        margin: 5px;
+    }
+    input:focus{
+        background-color: steelblue;
+        opacity: 0.35;
+    }
+    button{
+        margin-top:0px;
+        width:80px;
+        height: 25px;
+        padding: 5px;
+        vertical-align: middle;
+        font-size:15px;
+        border-radius: 2px;
+        background-color:rgb(147,112,219);
+        color: white;
+        margin: 10px;
+        text-align: center;
+        padding:5px;
+        border: none;
+        border-radius: 2px;
+    }
+    #myVideo{
+        position: fixed;
+        width: auto;
+        height: auto;
+    }
+    a{
+        color: white;
+        font-size: 14px;
+    }
+    div{
+        width: 200px;
+        height: 250px;
+        border: 1px solid white;
+    }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="D:\Advanced Certificate Program in Full Stack Software Development\Front-End Development\NEWS APP\Videos\Background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="login">
+        <h3>Create Gmail Account</h3>
+        <form action="">
+            <input type="text" name="name" placeholder="Full Name" required><br>
+            <input type="number" name="number" placeholder="Contact Number" minlength="10" min="6000000000" max="9999999999" required><br>
+            <input type="email" name="email" placeholder="Enter email"  required><br>
+            <button>Reset</button>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
